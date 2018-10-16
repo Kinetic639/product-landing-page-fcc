@@ -1,0 +1,18 @@
+.header,
+.branding,
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    padding: 1rem 3rem;
+}
+
+.navigation {
+    list-style: none;
+}
+
+.nav-link:not(:last-child) {
+    margin-right: 1rem;
+}

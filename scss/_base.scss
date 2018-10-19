@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid grey;
+  //border: 1px solid $color-valid-light;
 }
 
 *,
@@ -22,5 +22,7 @@ html {
   color: $color-grey-dark-2;
 }
 body {
-
+  height: 3000px;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(27,199,194,1) 57%, rgba(0,212,255,1) 100%);
 }

@@ -7,12 +7,34 @@
 
 .header {
     padding: 1rem 3rem;
+    margin-top: .5rem;
+    position: fixed;
+    width: 100%;
+    background-color: $color-grey-dark-2;
+    border: 1px solid $color-valid-light;
+}
+
+.nav-link:not(:last-child) {
+    margin-right: 1rem;
 }
 
 .navigation {
     list-style: none;
 }
 
-.nav-link:not(:last-child) {
-    margin-right: 1rem;
+.branding__name {
+    margin-left: 1rem;
+}
+
+.main {
+   padding-top: 5rem;
+    height: 300rem;
+}
+
+.footer {
+    padding: 1rem 3rem;
+    margin-top: .5rem;
+    width: 100%;
+    background-color: $color-grey-dark-2;
+    border: 1px solid $color-valid-light;
 }

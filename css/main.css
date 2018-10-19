@@ -1,7 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
-  border: 1px solid grey; }
+  padding: 0; }
 
 *,
 *::before,
@@ -17,6 +16,11 @@ html {
   text-align: center;
   color: #3C454C; }
 
+body {
+  height: 3000px;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #1bc7c2 57%, #00d4ff 100%); }
+
 .header,
 .branding,
 .navigation {
@@ -24,16 +28,48 @@ html {
   justify-content: space-between; }
 
 .header {
-  padding: 1rem 3rem; }
-
-.navigation {
-  list-style: none; }
+  padding: 1rem 3rem;
+  margin-top: .5rem;
+  position: fixed;
+  width: 100%;
+  background-color: #3C454C;
+  border: 1px solid #f7ffee; }
 
 .nav-link:not(:last-child) {
   margin-right: 1rem; }
 
+.navigation {
+  list-style: none; }
+
+.branding__name {
+  margin-left: 1rem; }
+
+.main {
+  padding-top: 5rem;
+  height: 300rem; }
+
+.footer {
+  padding: 1rem 3rem;
+  margin-top: .5rem;
+  width: 100%;
+  background-color: #3C454C;
+  border: 1px solid #f7ffee; }
+
+.status {
+  height: .5rem;
+  width: 0%;
+  background-color: #fff;
+  transition: .2s linear;
+  position: fixed;
+  border: none; }
+
 .header {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  color: #f7ffee; }
 
 .navigation {
   text-transform: uppercase; }
+
+.footer {
+  font-size: 1.6rem;
+  color: #f7ffee; }

@@ -67,3 +67,11 @@
     }
 
 }
+
+.gallery {
+ margin: 0;
+ padding: 0;
+    &__img {
+        width: 100vw;
+    }
+}

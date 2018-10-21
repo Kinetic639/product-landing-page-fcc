@@ -5,9 +5,25 @@
 
 .navigation {
     text-transform: uppercase;
+    & a {
+        color: $color-yellow-1;
+        text-decoration: none;
+        transition: 1s;
+        &:hover {
+        color: $color-yellow-2;
+        }
+    }
 }
 
 .footer {
     font-size: 1.6rem;
     color: $color-valid-light;
+}
+
+.btn {
+    &__link {
+        &:hover {
+            color: $color-confirm;
+        }
+    }
 }

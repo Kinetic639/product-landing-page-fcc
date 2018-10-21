@@ -1,8 +1,69 @@
-.status {
-    height: .5rem;
-    width: 0%;
-    background-color: #fff;
-    transition: .2s linear;
-    position: fixed;
+.btn {
+    width: 175px;
+    height: 45px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto;
+
+    &__link::before,
+    &__link::after,
+    &__span::before,
+    &__span::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: $color-confirm;
+        transition: 1s;
+        mix-blend-mode: hue;
+    }
+
+    &__link {
+        position: absolute;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-white;
+        width: 180px;
+        height: 50px;
+        background-color: $color-grey-dark-1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        &::before {
+            top: -3px;
+            left: -3px;
+        }
+
+        &::after {
+            top: -3px;
+            right: -3px;
+        }
+    }
+
+    &__span {
+
+        &::before {
+            bottom: -3px;
+            left: -3px;
+        }
+
+        &::after {
+            bottom: -3px;
+            right: -3px;
+        }
+
+    }
+
+    &__link:hover::before,
+    &__link:hover::after,
+    &__link:hover span::before,
+    &__link:hover span::after {
+        width: calc(180px / 2);
+        height: calc(50px / 2);
+    }
+
 }
